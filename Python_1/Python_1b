@@ -1,1 +1,52 @@
-
+{
+ "cells": [
+  {
+   "cell_type": 
+   "metadata": {},
+   "source": [
+    "# Introduction to Python (giới thiệu lập trình Python)\n",
+    "\n",
+    "Authors: . Adapted from: Mathieu Blondel. \n",
+    "\n",
+    "# Python 1b: Data Structures\n",
+    "\n",
+    "Chào mừng bạn đã đến với bài học thực hành về cấu trúc dữ liệu (data structures) trong Python! Trong bài này, chúng mình sẽ cùng nhau tìm hiểu về những cấu trúc dữ liệu cơ bản và nâng cao khác nhau trong Python, cũng như là cách triển khai và ứng dụng chúng trong thực tế. \n",
+    "\n",
+    "Cấu trúc dữ liệu là nền tảng quan trọng của lập trình, và đặc biệt quan trọng trong khoa học dữ liệu và Machine Learning. Vì thế, việc hiểu và sử dụng đúng cấu trúc dữ liệu sẽ giúp chúng mình tối ưu hoá hiệu suất chương trình và giải quyết các bài toán phức tạp một cách hiệu quả hơn. \n"
+  ]
+},
+{
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Arrays / Mảng"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "* Mảng là một cấu trúc dữ liệu lưu trữ các phần tử cùng kiểu dữ liệu tại các vị trí liên tiếp trong bộ nhớ. Trong Python, chúng mình thường sử dụng module 'array' hoặc thư viện NumPy để làm việc với mảng. \n",
+    "* Một ví dụ thực tế có thể kể đến của Mảng (Arrays) là bãi đỗ xe. Trong bãi đỗ xe sẽ có các ô đỗ xe riêng, thường đều được gán một con số khác biệt nhất định. Những ô này thường chứa các phương tiện khác nhau, ví dụ như có những ô đang chứa ô tô, xe máy, cũng có thể có những ô đang trống. Nhưng không phải tất cả các bãi đỗ xe đều giống nhau. Có thể có bãi chỉ dành cho xe ô tô và xe đạp không được phép đỗ tại đó. Một bãi đỗ xe có giới hạn tương ứng với cấu trúc dữ liệu mảng có kiểu dữ liệu xác định, chỉ cho phép lưu trữ các phần tử có cùng kiểu dữ liệu. \n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "* Thao tác cơ bản đầu tiên với mảng: Chèn phần tử (Insertion)\n",
+    "* Thêm phần tử vào mảng có thể được thực hiện ở cuối mảng, đầu mảng hoặc tại một vị trí cụ thể."
+   ]
+  },
+{
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_array = [1,2,3,4]\n",
+    "my_array.append(5)      #Thêm vào cuối: [1,2,3,4,5] \n",
+    "my_array.insert(0,0)    #Thêm vào vị trí 0: [0,1,2,3,4,5] \n",
+    "my_array.insert(3,2.5)  #Thêm vào vị trí 3: [0,1,2,2.5,3,4,5]"
+   ]
+  }
